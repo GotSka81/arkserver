@@ -44,6 +44,7 @@ docker pull GotSka81/arkserver:latest
 To run a generic server with no configuration modifications:
 ```bash
 $ docker run -d \
+    --restart always \
     -v steam:/home/steam/Steam \
     -v ark:/ark \
     -p 27015:27015 -p 27015:27015/udp \
