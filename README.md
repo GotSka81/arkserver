@@ -36,7 +36,7 @@ For more information on `arkmanager`, see the repo here: https://github.com/FezV
 
 Pull the latest (or any other desired version):
 ```bash
-docker pull GotSka81/arkserver:latest
+docker pull gotska81/arkserver:latest
 ```
 
 ### Running the server
@@ -50,7 +50,7 @@ $ docker run -d \
     -p 27015:27015 -p 27015:27015/udp \
     -p 7778:7778 -p 7778:7778/udp \
     -p 7777:7777 -p 7777:7777/udp \
-    GotSka81/arkserver
+    gotska81/arkserver
 ```
 
 If the exposed ports are modified (in the case of multiple containers/servers on the same host) the `arkmanager` config will need to be modified to reflect the change as well. This is required so that `arkmanager` can properly check the server status and so that the ARK server itself can properly publish its IP address and query port to steam.
