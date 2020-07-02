@@ -1,7 +1,6 @@
-[![Travis CI Build Status](https://img.shields.io/travis/thmhoag/arkserver/master?label=Travis%20CI&style=flat-square)](https://travis-ci.org/github/thmhoag/arkserver)
-[![Docker Build Status](https://img.shields.io/docker/cloud/build/thmhoag/arkserver?style=flat-square)](https://hub.docker.com/r/thmhoag/arkserver/builds/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/thmhoag/arkserver.svg?style=flat-square)](https://hub.docker.com/r/thmhoag/arkserver/) 
-[![License](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](https://github.com/thmhoag/arkserver/blob/master/LICENSE)
+#[![Travis CI Build Status](https://img.shields.io/travis/thmhoag/arkserver/master?label=Travis%20CI&style=flat-square)](https://travis-ci.org/github/thmhoag/arkserver)
+[![Docker Build Status](https://img.shields.io/docker/cloud/build/gotska81/arkserver?style=flat-square)](https://hub.docker.com/r/gotska81/arkserver/builds/)
+[![License](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](https://github.com/gotska81/arkserver/blob/master/LICENSE)
 
 
 # arkserver
