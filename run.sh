@@ -66,9 +66,9 @@ if [ ! -f /ark/config/crontab ]; then
 # */15 * * * * arkmanager backup			# backup every 15min
 # 0 0 * * * arkmanager backup				# backup every day at midnight
 
-*/30 * * * * arkmanager update --update-mods --warn --saveworld
-10 */8 * * * arkmanager saveworld && arkmanager backup
-15 10 * * * arkmanager restart --warn --saveworld
+*/30 * * * * arkmanager update --update-mods --warn
+10 */8 * * * arkmanager backup
+15 10 * * * arkmanager restart --warn
 
 EOF
 fi
