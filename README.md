@@ -11,7 +11,7 @@ Docker image for a dedicated ARK Server with arkmanager.
 
 ## Overview
 
-This is an image for running an ARK: Survival Evolved server in a Docker container. It is heavily based off of [TuRz4m](https://github.com/TuRz4m)'s work located here: [TuRz4m/Ark-docker](https://github.com/TuRz4m/Ark-docker). It uses [FezVrasta](https://github.com/FezVrasta)'s [arkmanager](https://github.com/FezVrasta/ark-server-tools) (ark-server-tools) to managed a single-instance ARK: Survival Evolved server inside a docker container.
+This is an image for running an ARK: Survival Evolved server in a Docker container. It is heavily based off of [TuRz4m](https://github.com/TuRz4m)'s work located here: [TuRz4m/Ark-docker](https://github.com/TuRz4m/Ark-docker) and forked from [thmhoag/arkserver](https://github.com/thmhoag/arkserver). It uses [FezVrasta](https://github.com/FezVrasta)'s [arkmanager](https://github.com/FezVrasta/ark-server-tools) (ark-server-tools) to managed a single-instance ARK: Survival Evolved server inside a docker container.
 
 This image inherits from the [thmhoag/steamcmd](https://github.com/thmhoag/steamcmd) image to include the latest version of `steamcmd`.
 
@@ -36,7 +36,7 @@ For more information on `arkmanager`, see the repo here: https://github.com/FezV
 
 Pull the latest (or any other desired version):
 ```bash
-docker pull thmhoag/arkserver:latest
+docker pull GotSka81/arkserver:latest
 ```
 
 ### Running the server
@@ -44,12 +44,12 @@ docker pull thmhoag/arkserver:latest
 To run a generic server with no configuration modifications:
 ```bash
 $ docker run -d \
-    -v steam:/home/steam/Steam \  # mounted so that workshop (mod) downloads are persisted
-    -v ark:/ark \  # mounted as the directory to contain the server/backup/log/config files
-    -p 27015:27015 -p 27015:27015/udp \  # steam query port
-    -p 7778:7778 -p 7778:7778/udp \  # gameserver port
-    -p 7777:7777 -p 7777:7777/udp \ # gameserver port
-    thmhoag/arkserver
+    -v steam:/home/steam/Steam \
+    -v ark:/ark \
+    -p 27015:27015 -p 27015:27015/udp \
+    -p 7778:7778 -p 7778:7778/udp \
+    -p 7777:7777 -p 7777:7777/udp \
+    GotSka81/arkserver
 ```
 
 If the exposed ports are modified (in the case of multiple containers/servers on the same host) the `arkmanager` config will need to be modified to reflect the change as well. This is required so that `arkmanager` can properly check the server status and so that the ARK server itself can properly publish its IP address and query port to steam.
