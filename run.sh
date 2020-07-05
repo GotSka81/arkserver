@@ -68,7 +68,7 @@ if [ ! -f /ark/config/crontab ]; then
 
 */30 * * * * arkmanager update --update-mods --warn
 10 */8 * * * arkmanager backup
-15 10 * * * arkmanager restart --warn
+#15 10 * * * arkmanager restart --warn
 
 EOF
 fi
