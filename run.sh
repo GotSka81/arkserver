@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-SteamCMD
-
 SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 REPODIR="$(dirname "$SCRIPTDIR")"
 
