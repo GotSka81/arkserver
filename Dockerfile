@@ -34,4 +34,5 @@ ENV am_ark_SessionName="Ark Server" \
 
 VOLUME /ark
 
-CMD [ "./run.sh" ]
+# CMD [ "./run.sh" ]
+CMD ["sleep","7200"]
